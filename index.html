@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================
+         BASIC SETTINGS
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Luxe | Premium Fashion Studio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         PAGE LOADER
+    ========================================== -->
+    <div id="loader" aria-label="Loading">
+        <div class="loader-mark"></div>
+        <p>Maison Luxe</p>
+    </div>
+
+    <!-- ==========================================
+         SCROLL PROGRESS BAR
+    ========================================== -->
+    <div id="progress-bar"></div>
+
+    <!-- ==========================================
+         HEADER / NAVBAR
+    ========================================== -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">Maison<span>Luxe</span></a>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-cta">Book Studio</a>
+
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             HERO SECTION
+        ========================================== -->
+        <section id="home" class="hero">
+            <div class="hero-slider" aria-hidden="true">
+                <img src="images/hero1.jpg" class="slide active" alt="">
+                <img src="images/hero2.jpg" class="slide" alt="">
+                <img src="images/hero3.jpg" class="slide" alt="">
+            </div>
+
+            <div class="hero-content">
+                <span class="eyebrow">Premium Fashion Studio</span>
+                <h1>Elegant Fashion For Every Occasion</h1>
+                <p>Modern silhouettes, rich styling, and a luxury shopping experience built for premium fashion brands.</p>
+
+                <div class="hero-actions">
+                    <a href="#collection" class="btn">Explore Collection</a>
+                    <a href="#gallery" class="btn btn-ghost">View Gallery</a>
+                </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Brand highlights">
+                <span>Since 2026</span>
+                <h2>Crafted for confident style.</h2>
+                <div class="hero-stats">
+                    <div><strong>35+</strong><small>Looks</small></div>
+                    <div><strong>4.9</strong><small>Rating</small></div>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ==========================================
+             ABOUT SECTION
+        ========================================== -->
+        <section id="about" class="about reveal">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Premium fashion collection">
+            </div>
+
+            <div class="about-content">
+                <span class="section-tag">About Us</span>
+                <h2>Luxury presentation with a clean modern feel.</h2>
+                <p>We create elegant fashion experiences that blend premium visuals, smooth interaction, and responsive design. Every detail is shaped to make your brand feel polished and memorable.</p>
+
+                <div class="feature-list">
+                    <div><i class="fa-solid fa-gem"></i><span>Premium visual design</span></div>
+                    <div><i class="fa-solid fa-mobile-screen"></i><span>Responsive on every device</span></div>
+                    <div><i class="fa-solid fa-wand-magic-sparkles"></i><span>Smooth interactive details</span></div>
+                    <div><i class="fa-solid fa-bolt"></i><span>Fast and lightweight pages</span></div>
+                </div>
+
+                <a href="#contact" class="btn">Start Your Project</a>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             FEATURED COLLECTION
+        ========================================== -->
+        <section id="collection" class="collection reveal">
+            <div class="section-header">
+                <span class="section-tag">Our Collection</span>
+                <h2>Featured Collection</h2>
+                <p>Curated fashion cards with refined spacing, rich imagery, and strong product presentation.</p>
+            </div>
+
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <img src="images/product1.jpg" alt="Elegant collection">
+                    <div class="card-content">
+                        <span>Signature</span>
+                        <h3>Elegant Collection</h3>
+                        <p>Premium styling with timeless detail.</p>
+                    </div>
+                </article>
+
+                <article class="collection-card featured">
+                    <img src="images/product2.jpg" alt="Modern collection">
+                    <div class="card-content">
+                        <span>New Season</span>
+                        <h3>Modern Collection</h3>
+                        <p>Fresh silhouettes for refined occasions.</p>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <img src="images/product3.jpg" alt="Classic collection">
+                    <div class="card-content">
+                        <span>Classic</span>
+                        <h3>Classic Collection</h3>
+                        <p>Comfort, elegance, and premium finish.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             GALLERY SECTION
+        ========================================== -->
+        <section id="gallery" class="gallery reveal">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2>Latest Showcase</h2>
+                <p>Click any image to preview it in a clean full-screen lightbox.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <button class="gallery-item tall" type="button"><img src="images/gallery1.jpg" alt="Gallery look 1"></button>
+                <button class="gallery-item" type="button"><img src="images/gallery2.jpg" alt="Gallery look 2"></button>
+                <button class="gallery-item" type="button"><img src="images/gallery3.jpg" alt="Gallery look 3"></button>
+                <button class="gallery-item wide" type="button"><img src="images/gallery4.jpg" alt="Gallery look 4"></button>
+                <button class="gallery-item" type="button"><img src="images/gallery5.jpg" alt="Gallery look 5"></button>
+                <button class="gallery-item tall" type="button"><img src="images/gallery6.jpg" alt="Gallery look 6"></button>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             TESTIMONIAL SECTION
+        ========================================== -->
+        <section class="testimonials reveal">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>What Clients Say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing website design with a premium look and smooth experience."</p>
+                    <span>Happy Client</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Professional design, responsive layout, and excellent presentation."</p>
+                    <span>Business Owner</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Exactly the kind of refined website we wanted for our brand."</p>
+                    <span>Customer</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             FAQ SECTION
+        ========================================== -->
+        <section class="faq reveal">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-container">
+                <article class="faq-item">
+                    <h3>Do you create custom websites?</h3>
+                    <p>Yes, every website can be designed according to client requirements.</p>
+                </article>
+
+                <article class="faq-item">
+                    <h3>Is the website mobile responsive?</h3>
+                    <p>Yes, it works smoothly on mobile, tablet, and desktop screens.</p>
+                </article>
+
+                <article class="faq-item">
+                    <h3>Can this design be customized?</h3>
+                    <p>Absolutely. Colors, images, text, sections, and branding can all be changed.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             CONTACT SECTION
+        ========================================== -->
+        <section id="contact" class="contact reveal">
+            <div class="section-header">
+                <span class="section-tag">Contact Us</span>
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind? Send your details and we will help shape the next step.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Surat, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mr.chandanrathod8@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 7383321457</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="6" placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER SECTION
+    ========================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <a class="logo" href="#home">Maison<span>Luxe</span></a>
+                <p>Premium demo website for fashion portfolios and client presentation.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#collection">Collection</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">© 2026 Maison Luxe. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ==========================================
+         BACK TO TOP BUTTON
+    ========================================== -->
+    <button id="topBtn" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ==========================================
+         FLOATING WHATSAPP BUTTON
+    ========================================== -->
+    <a href="https://wa.me/917383321457" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ==========================================
+         IMAGE LIGHTBOX
+    ========================================== -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="close-lightbox" type="button" aria-label="Close preview">&times;</button>
+        <img id="lightbox-img" src="" alt="Preview">
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
